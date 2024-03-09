@@ -1,0 +1,29 @@
+GET http://localhost:3000/ordenesTrabajo HTTP/1.1
+
+####
+
+GET http://localhost:3000/ordenesTrabajo/1 HTTP/1.1
+
+####
+POST http://localhost:3000/ordenesTrabajo/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "Descripcion": "Prueba 2",
+    "Estado": "En Proceso",
+    "idUsuario": 1,
+    "idTipoUsuario": 1
+}
+
+####
+PUT http://localhost:3000/ordenesTrabajo/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "Descripcion": "Prueba sebas"
+}
+
+####
+DELETE http://localhost:3000/tiposUsuarios/2 HTTP/1.1
+
+
